@@ -1,0 +1,25 @@
+.leftBox h1{
+  font-size: 46px;
+  line-height: 52px;
+  width: 100%;
+  max-width: 330px;
+}
+
+.leftBox p{
+  width: 100%;
+  max-width: 380px;
+}
+
+
+
+
+
+
+
+
+.reviewBox{
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  margin-bottom: 5px;
+}
