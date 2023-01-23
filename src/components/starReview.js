@@ -1,11 +1,35 @@
+import { Stars } from "../images/stars"
 
-const StarReview = (props) => {
+const StarReview = () => {
+  
+  const reviews = [
+    {
+      reviews: 'Reviews',
+      stars: 5,
+    },
+    {
+      reviews: 'Report Guru',
+      stars: 5,
+    },
+    {
+      reviews: 'BestTech',
+      stars: 5,
+    }
+  ]
+  
   return(
-    <div className="reviewBox" id={props.id}>
-      <h2>teste</h2>
-      <span>Rated 5 Stars in {props.star}</span>
-    </div>
+    <>
+      {reviews.map(((item, i) => (
+        <div className="review" id={'review' + i}>
+          <span>
+          </span>
+          <h2>Rated {item.stars} Stars in {item.reviews}</h2>
+            <img src={Stars[0]} alt=''/>  
+        </div> 
+      )))}
+    </>
   )
 }
+
 
 export default StarReview
